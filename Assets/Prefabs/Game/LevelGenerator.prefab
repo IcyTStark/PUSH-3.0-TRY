@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6108541217623078863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6108541217623078862}
+  - component: {fileID: 6108541217623078861}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6108541217623078862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6108541217623078863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6108541217623078861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6108541217623078863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520caac76d15ef44eaa0844b86b14eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AW: {fileID: 8568437313918424094, guid: b4a494e5fb3809b4aab5a30fc88de722, type: 3}
+  AS: {fileID: 8568437313918424094, guid: c5816fb9b5a29c84aaab8bd9c9c5b4db, type: 3}
+  AE: {fileID: 8568437313918424094, guid: 93baff8ec8caeee449526231805e9cb8, type: 3}
+  AN: {fileID: 8568437313918424094, guid: 8d9f6c279549ada49996a54868b51d17, type: 3}
+  BW: {fileID: 8568437313918424094, guid: a880118001f021d47b8e4ca7bb934793, type: 3}
+  BS: {fileID: 8568437313918424094, guid: 6f5d2c023474e1940ae68d68c1127d34, type: 3}
+  BE: {fileID: 8568437313918424094, guid: 727a6688a5efe0740a74bc1594bd64f9, type: 3}
+  BN: {fileID: 8568437313918424094, guid: 6de9a22c623e82e4f83ff7ff23494245, type: 3}
+  CW: {fileID: 8568437313918424094, guid: f51bd581e13c51f48ac3181211a275d3, type: 3}
+  CS: {fileID: 8568437313918424094, guid: 38cd3e7c186bdbb458c4ebafefbc7803, type: 3}
+  CE: {fileID: 8568437313918424094, guid: acb20459dcbe9034895c9a906383a2da, type: 3}
+  CN: {fileID: 8568437313918424094, guid: 459a2c66a58cc8d4a8cc491a9250d918, type: 3}
+  DW: {fileID: 8568437313918424094, guid: ea37711d9211fdc4f9c5485ba26c4052, type: 3}
+  DS: {fileID: 8568437313918424094, guid: be8bc3d19d494604f877a9d1692113a2, type: 3}
+  DE: {fileID: 8568437313918424094, guid: 7072b94a783a2d340add03717889cf48, type: 3}
+  DN: {fileID: 8568437313918424094, guid: 75f43a245ac7e5c48847b938e2715bd7, type: 3}
+  EW: {fileID: 8568437313918424094, guid: c7799f83d94fa974ea585fa05ca018cc, type: 3}
+  ES: {fileID: 8568437313918424094, guid: e56fdad64eb21f445af06d61f4db7c0b, type: 3}
+  EE: {fileID: 8568437313918424094, guid: ea6639e08f006cf499d171f00305bce3, type: 3}
+  EN: {fileID: 8568437313918424094, guid: 548bf0d88fe636e458d276087e5d932e, type: 3}
+  Rails: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
+  Destination: {fileID: 2142188353712646506, guid: 5ad76dda938a5fa4784964f883430b9d, type: 3}
+  LevelName: 
