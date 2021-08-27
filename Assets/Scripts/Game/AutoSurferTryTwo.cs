@@ -29,8 +29,8 @@ public class AutoSurferTryTwo : MonoBehaviour
     }
     private void Update()
     {
-        //for (int i = 0; i < TargetPointsInScene.Length; i++)
-        //{
-        //}
+        for (int i = 0; i < TargetPointsInScene.Length; i++)
+        {
+        }
     }
 }

@@ -629,6 +629,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 6536116751804568454}
+    - target: {fileID: 7201705661818317584, guid: e35a39ba16ed52848a822b0771a117e1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7551215918117234164, guid: e35a39ba16ed52848a822b0771a117e1, type: 3}
       propertyPath: m_Name
       value: PlayerSpawn
