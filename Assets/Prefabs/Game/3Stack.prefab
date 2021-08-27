@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9199592133729674370}
   - component: {fileID: 6345055946082938424}
+  - component: {fileID: 8278806960086523690}
   m_Layer: 0
   m_Name: 3Stack
   m_TagString: Surfers
@@ -48,6 +49,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.0744596, z: 1.0900961}
   m_Center: {x: 0, y: 3.0372298, z: 0.0037102103}
+--- !u!114 &8278806960086523690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2814352807189929959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8036f0ae5d7841e42b7f311a5f8e4cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &6873772894853478838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -81,7 +94,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6527595730625895719}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
   m_Name: 
@@ -122,7 +135,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6536116751804568454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
   m_Name: 
@@ -150,7 +163,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9007007795680878751}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
   m_Name: 

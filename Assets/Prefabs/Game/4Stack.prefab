@@ -33,7 +33,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169178540350830346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
   m_Name: 
@@ -51,6 +51,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9199592133729674370}
   - component: {fileID: 7456192563135075221}
+  - component: {fileID: 4261357682662630345}
   m_Layer: 0
   m_Name: 4Stack
   m_TagString: Surfers
@@ -90,6 +91,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.3489804, z: 1.0007285}
   m_Center: {x: 0, y: 3.1817992, z: -0.010176837}
+--- !u!114 &4261357682662630345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2814352807189929959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8036f0ae5d7841e42b7f311a5f8e4cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &2070490092117278728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -123,7 +136,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6527595730625895719}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
   m_Name: 
@@ -144,6 +157,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.15, z: 0.9}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3286266387078290910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6536116751804568454}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetPointsInScene: []
+  TargetPointScriptOfTargetPoints: []
+  speed: 0
 --- !u!114 &6687586538435028855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,21 +185,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
---- !u!114 &3286266387078290910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6536116751804568454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetPointsInScene: []
-  TargetPointScriptOfTargetPoints: []
-  speed: 0
 --- !u!65 &3734498910378726330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -185,6 +198,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.15, z: 0.9}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &730694317713097648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007007795680878751}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetPointsInScene: []
+  TargetPointScriptOfTargetPoints: []
+  speed: 0
 --- !u!114 &9084861706233849189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,21 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
---- !u!114 &730694317713097648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9007007795680878751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c0e4841abd4de84b994cf63d4606b48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetPointsInScene: []
-  TargetPointScriptOfTargetPoints: []
-  speed: 0
 --- !u!1001 &1090348084298509703
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,18 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class AutoSurferTry3 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    int storeChildCount;
     void Start()
     {
-        
+        storeChildCount = this.gameObject.transform.childCount;
+        for (int i = 0; i < storeChildCount; i++)
+        {
+            Debug.Log(this.gameObject.transform.GetChild(i).name);
+        }
+    }
+    bool FindClosestTargetPoints(out TargetPoint targetPoint)
+    {
+        targetPoint = FindObjectsOfType<TargetPoint>().Where(t => !t.isFilled).OrderBy(t => (t.transform.position - transform.position).sqrMagnitude).FirstOrDefault();
+        return targetPoint;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //void Update()
+    //{
+    //    for (int i = 0; i < storeChildCount; i++)
+    //    {
+
+    //    }
+    //}
 }
