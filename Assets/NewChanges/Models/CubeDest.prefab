@@ -305,6 +305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftzz
       objectReference: {fileID: 0}
+    - target: {fileID: 4149526202841095069, guid: 69864c1045dcfac43b1388aa2ed2ecf6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4149526202841095071, guid: 69864c1045dcfac43b1388aa2ed2ecf6, type: 3}
       propertyPath: m_RootOrder
       value: 1

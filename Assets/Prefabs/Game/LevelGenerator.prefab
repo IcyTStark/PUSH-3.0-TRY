@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6108541217623078862}
   - component: {fileID: 6108541217623078861}
+  - component: {fileID: 8985206650423513538}
   m_Layer: 0
   m_Name: LevelGenerator
   m_TagString: Untagged
@@ -38,7 +39,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6108541217623078863}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 520caac76d15ef44eaa0844b86b14eb0, type: 3}
   m_Name: 
@@ -66,3 +67,21 @@ MonoBehaviour:
   Rails: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
   Destination: {fileID: 2142188353712646506, guid: 5ad76dda938a5fa4784964f883430b9d, type: 3}
   LevelName: 
+--- !u!114 &8985206650423513538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6108541217623078863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a699d5e8d4d09d4094bdf6648e1d54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 8568437313918424094, guid: 8d9f6c279549ada49996a54868b51d17, type: 3}
+  destination: {fileID: 2142188353712646506, guid: 5ad76dda938a5fa4784964f883430b9d, type: 3}
+  gift: {fileID: 5823500004866244441, guid: 947dfa5bd8614774eaa74e9ab26b14eb, type: 3}
+  rails: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
+  playerSpawner: {fileID: 7551215918117234164, guid: e35a39ba16ed52848a822b0771a117e1, type: 3}
+  surferBoard: {fileID: 970731544045492877, guid: e4eab94303e66f44da312dfa483131a3, type: 3}

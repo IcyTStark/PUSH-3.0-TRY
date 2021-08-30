@@ -337,6 +337,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f901e2662e7e814590d48d5b0f305aa, type: 3}
+--- !u!1 &172895858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 172895859}
+  - component: {fileID: 172895860}
+  - component: {fileID: 172895861}
+  m_Layer: 0
+  m_Name: New Level Generator Try
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &172895859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172895858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &172895860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172895858}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9725d8b242f75540bb3e43512793893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
+  destination: {fileID: 0}
+  gift: {fileID: 0}
+  rails: {fileID: 0}
+  surferData: []
+--- !u!114 &172895861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172895858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a699d5e8d4d09d4094bdf6648e1d54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 8568437313918424094, guid: 8d9f6c279549ada49996a54868b51d17, type: 3}
+  destination: {fileID: 2142188353712646506, guid: 5ad76dda938a5fa4784964f883430b9d, type: 3}
+  gift: {fileID: 5823500004866244441, guid: 947dfa5bd8614774eaa74e9ab26b14eb, type: 3}
+  rails: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
+  playerSpawner: {fileID: 7551215918117234164, guid: e35a39ba16ed52848a822b0771a117e1, type: 3}
+  surferBoard: {fileID: 970731544045492877, guid: e4eab94303e66f44da312dfa483131a3, type: 3}
 --- !u!1 &532853075
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,6 +551,10 @@ PrefabInstance:
     - target: {fileID: 1983549553609998130, guid: 6d2a124d67f80064dbeff7ccee435b64, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1983549553609998130, guid: 6d2a124d67f80064dbeff7ccee435b64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1983549553609998133, guid: 6d2a124d67f80064dbeff7ccee435b64, type: 3}
       propertyPath: m_RootOrder
@@ -1196,6 +1267,10 @@ PrefabInstance:
       propertyPath: LevelName
       value: Level1
       objectReference: {fileID: 0}
+    - target: {fileID: 3904096826641975310, guid: f48456156eec42b458da9e40a3c9b267, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4167229008631069982, guid: f48456156eec42b458da9e40a3c9b267, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1261,6 +1336,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 644924254287916952, guid: 65bcbcf08a35abf408265f93f19a32dc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 644924254287916953, guid: 65bcbcf08a35abf408265f93f19a32dc, type: 3}
       propertyPath: m_IsActive
       value: 1

@@ -11,7 +11,7 @@ public class AutoSurferTry3 : MonoBehaviour
         storeChildCount = this.gameObject.transform.childCount;
         for (int i = 0; i < storeChildCount; i++)
         {
-            Debug.Log(this.gameObject.transform.GetChild(i).name);
+            //Debug.Log(this.gameObject.transform.GetChild(i).name);
         }
     }
     bool FindClosestTargetPoints(out TargetPoint targetPoint)
