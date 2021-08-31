@@ -22,10 +22,7 @@ public class AutomaticLevelGenerator : MonoBehaviour
     public GameObject destination; // Holds the destination GameObject
     public GameObject gift;    // Holds the gift GameObject
     public GameObject rails; //Place where surfer sits
-    //public GameObject playerSpawner;  // Holds the character
-    //public GameObject surferBoard; // SurferBoard and its count
-    //public int surferBoardCount; //Count of the Surfer Board
-
+    
     [Serializable]
     public class SurferData
     {
@@ -56,14 +53,21 @@ public class AutomaticLevelGenerator : MonoBehaviour
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         //Instantiates the number of surfer required based on the count we give out at surferData in inspector.
                         // * *************HARDCODING ZERO BELOW IS WRONG. JUST DOING IT TO SEE IF ITS WORKING *******
+                        float j = 0;
+                        for (int i = 0; i < surferData[0].surferBoardCount; i++, j += 0.3f)
+                        {
+                            Instantiate(surferData[0].surferBoard, new Vector3(x, 2.3f + j, z), Quaternion.identity);
+                            if (i > surferData[0].surferBoardCount) break;
+                        }
                         break;                                   
                     case "2":                                    
-                        Instantiate(rails, new Vector3(x, 1.95f, z), Quaternion.identity);  //Instantiates rails (Surfer Holders / Place for surfers to sit)
+                        GameObject Rails = Instantiate(rails, new Vector3(x, 1.95f, z), Quaternion.identity);  //Instantiates rails (Surfer Holders / Place for surfers to sit)
+                        //GameObject.Find("LevelManager").GetComponent<LevelManager>().targetPoints.Add(Rails.GetComponent<TargetPoint>());
                         break;                                   
                     case "3":                                    
                         GameObject destinationRef = Instantiate(destination, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Destination
-                        GameObject giftRef =  Instantiate(gift, new Vector3(x, 2f, z), Quaternion.identity); //Instantiates 
-                        //giftRef.transform.SetParent(destinationRef.transform, false);
+                        GameObject giftRef =  Instantiate(gift, new Vector3(transform.position.x, 2f, transform.position.z), Quaternion.identity); //Instantiates 
+                        giftRef.transform.SetParent(destinationRef.transform, true);
                         break;
                 }
             }
@@ -99,4 +103,9 @@ public class AutomaticLevelGenerator : MonoBehaviour
 //    //    Instantiate(surferData[0].surferBoard, new Vector3(x, 2.3f + j, z), Quaternion.identity);
 //    //    if (i > surferData[0].surferBoardCount) break;
 //    //}
+
+//public GameObject playerSpawner;  // Holds the character
+//public GameObject surferBoard; // SurferBoard and its count
+//public int surferBoardCount; //Count of the Surfer Board
+
 //}

@@ -9,6 +9,8 @@ public class LevelManager : MonoBehaviour
     //Configuration Variables
     [Space]
     public GameObject[] destinations;   //Gets the destination count for each level locally
+    GameObject[] targetPoints;
+    public List<TargetPoint> tp;
 
     [Space]
     [Header("Coin Display & Count")]
@@ -29,7 +31,6 @@ public class LevelManager : MonoBehaviour
 
     //Cached Reference
     [Space]
-    [SerializeField] GameObject LevelManagerRef;
     GameManager gameManager;
     
     //State Variables
@@ -43,6 +44,13 @@ public class LevelManager : MonoBehaviour
         {
             destinations = GameObject.FindGameObjectsWithTag("Destination"); // To calculate Target points in scene
             giftsInScene = GameObject.FindGameObjectsWithTag("Gift"); //To calculate coin count
+            targetPoints = GameObject.FindGameObjectsWithTag("TargetPoint");
+
+            foreach (GameObject target in targetPoints)
+            {
+                var storeTargetPoints = target.GetComponent<TargetPoint>();
+                tp.Add(storeTargetPoints);
+            }
 
             foreach (GameObject gift in giftsInScene)
             {
@@ -64,7 +72,6 @@ public class LevelManager : MonoBehaviour
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
             //Getting a reference of level specific Level Loader
-            LevelManagerRef = this.gameObject;
         }
     }
     

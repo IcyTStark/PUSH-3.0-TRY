@@ -40,7 +40,7 @@ public class AutomaticLevelGen : MonoBehaviour
         {
             for (int z = 0; z < LevelLoader[x].Length; z++)
             {
-                switch (LevelLoader[x][z].Trim())
+                switch (LevelLoader[x][z])
                 {
                     case "A":
                         surferBoardCount = 1;   
@@ -51,6 +51,7 @@ public class AutomaticLevelGen : MonoBehaviour
                             Instantiate(surferBoard, new Vector3(x, 2.3f + a, z), Quaternion.identity);
                             if (i > surferBoardCount) break;
                         }
+                        Instantiate(playerSpawner, new Vector3(x, 2.4f,z),Quaternion.identity);
                         break;
                     case "B":
                         surferBoardCount = 2;
@@ -61,6 +62,7 @@ public class AutomaticLevelGen : MonoBehaviour
                             Instantiate(surferBoard, new Vector3(x, 2.3f + b, z), Quaternion.identity);
                             if (i > surferBoardCount) break;
                         }
+                        Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.identity);
                         break;
                     case "C":
                         surferBoardCount = 3;
@@ -68,9 +70,10 @@ public class AutomaticLevelGen : MonoBehaviour
                         float c = 0;
                         for (int i = 0; i < surferBoardCount; i++, c += 0.3f)
                         {
-                            Instantiate(surferBoard, new Vector3(x, 2.3f + c, z), Quaternion.identity);
+                            Instantiate(surferBoard, new Vector3(x, 3f + c, z), Quaternion.identity);
                             if (i > surferBoardCount) break;
                         }
+                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.identity);
                         break;
                     case "D":
                         surferBoardCount = 4;
@@ -81,6 +84,7 @@ public class AutomaticLevelGen : MonoBehaviour
                             Instantiate(surferBoard, new Vector3(x, 2.3f + d, z), Quaternion.identity);
                             if (i > surferBoardCount) break;
                         }
+                        Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.identity);
                         break;
                     case "E":
                         surferBoardCount = 5;
@@ -88,17 +92,18 @@ public class AutomaticLevelGen : MonoBehaviour
                         float e = 0;
                         for (int i = 0; i < surferBoardCount; i++, e += 0.3f)
                         {
-                            Instantiate(surferBoard, new Vector3(x, 2.3f + e, z), Quaternion.identity);
+                            Instantiate(surferBoard, new Vector3(x, 3.7f + e, z), Quaternion.identity);
                             if (i > surferBoardCount) break;
                         }
+                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.identity);
                         break;
                     case "2":
                         Instantiate(rails, new Vector3(x, 1.95f, z), Quaternion.identity);  //Instantiates rails (Surfer Holders / Place for surfers to sit)
                         break;
                     case "3":
                         GameObject destinationRef = Instantiate(destination, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Destination
-                        GameObject giftRef = Instantiate(gift, new Vector3(x, 2f, z), Quaternion.identity); //Instantiates 
-                        //giftRef.transform.SetParent(destinationRef.transform, false);
+                        GameObject giftRef = Instantiate(gift, new Vector3(transform.position.x, 15f, transform.position.z), Quaternion.identity); //Instantiates 
+                        giftRef.transform.SetParent(destinationRef.transform, true);
                         break;
                 }
             }
@@ -110,15 +115,21 @@ public class AutomaticLevelGen : MonoBehaviour
     {
         TextAsset textFile = Resources.Load(fileName) as TextAsset;
         string text = textFile.text;
-        string[] lines = Regex.Split(text, "\n");
+        string[] lines = Regex.Split(text, "\r\n");
         int rows = lines.Length;
-
-        string[][] levelBase = new string[rows][];
+        //Debug.Log(rows);
         for (int i = 0; i < lines.Length; i++)
         {
             string[] stringsOfLine = Regex.Split(lines[i], ",");
-            levelBase[i] = stringsOfLine;
+            Debug.Log(stringsOfLine[i].Length);
+            //levelBase[i] = stringsOfLine;
         }
+        string[][] levelBase = new string[rows][];
+        //for (int i = 0; i < lines.Length; i++)
+        //{
+        //    string[] stringsOfLine = Regex.Split(lines[i], ",");
+        //    levelBase[i] = stringsOfLine;
+        //}
         return levelBase;
     }
 }
