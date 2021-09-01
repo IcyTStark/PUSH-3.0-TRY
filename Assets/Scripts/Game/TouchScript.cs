@@ -26,17 +26,18 @@ public class TouchScript : MonoBehaviour
                 
                 if (Physics.Raycast(ray, out hitSpot))
                 {
-                    if (hitSpot.collider.isTrigger == true && hitSpot.collider.gameObject.tag == "Surfers") //If its a gameOBject names surfer move it to its targetPosition
+                    if (hitSpot.collider.gameObject.tag == "Surfers") //If its a gameOBject names surfer move it to its targetPosition
                     {
-                        var storeLenght = hitSpot.transform.gameObject.transform.childCount - 1f;
-                        for (int i = 0; i <= storeLenght; i++)
-                        {
-                            if (hitSpot.transform.gameObject.transform.GetChild(i).GetComponent<PathToTravel>() != null)
-                            {
-                                hitSpot.transform.gameObject.transform.GetChild(i).GetComponent<PathToTravel>().move = true;
-                            }
-                        }
-                        Destroy(hitSpot.collider);
+                        hitSpot.transform.gameObject.GetComponent<FindYourWay>().move = true;
+                        //var storeLenght = hitSpot.transform.gameObject.transform.childCount - 1f;
+                        //for (int i = 0; i <= storeLenght; i++)
+                        //{
+                        //    if (hitSpot.transform.gameObject.transform.GetChild(i).GetComponent<PathToTravel>() != null)
+                        //    {
+                        //        hitSpot.transform.gameObject.transform.GetChild(i).GetComponent<PathToTravel>().move = true;
+                        //    }
+                        //}
+                        //Destroy(hitSpot.collider);
                     }
                 }
 

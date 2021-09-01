@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 8568437313918424094, guid: 8d9f6c279549ada49996a54868b51d17, type: 3}
-  destination: {fileID: 2142188353712646506, guid: 5ad76dda938a5fa4784964f883430b9d, type: 3}
+  endPoint: {fileID: 2142188353712646506, guid: 5ad76dda938a5fa4784964f883430b9d, type: 3}
   gift: {fileID: 5823500004866244441, guid: 947dfa5bd8614774eaa74e9ab26b14eb, type: 3}
   rails: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
   playerSpawner: {fileID: 7551215918117234164, guid: e35a39ba16ed52848a822b0771a117e1, type: 3}

@@ -696,52 +696,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFilled: 0
---- !u!1 &1033976595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3904096826641975308, guid: f48456156eec42b458da9e40a3c9b267, type: 3}
-  m_PrefabInstance: {fileID: 1539520596}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1033976599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033976595}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9725d8b242f75540bb3e43512793893, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  destination: {fileID: 0}
-  gift: {fileID: 0}
-  rails: {fileID: 0}
-  surferData:
-  - playerSpawner: {fileID: 0}
-    surferBoard: {fileID: 0}
-    surferBoardCount: 2
-  - playerSpawner: {fileID: 0}
-    surferBoard: {fileID: 0}
-    surferBoardCount: 4
---- !u!114 &1033976600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033976595}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a699d5e8d4d09d4094bdf6648e1d54c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  destination: {fileID: 0}
-  gift: {fileID: 0}
-  rails: {fileID: 0}
-  playerSpawner: {fileID: 0}
-  surferBoard: {fileID: 0}
 --- !u!1 &1071354451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1213,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2187090709830462977, guid: f48456156eec42b458da9e40a3c9b267, type: 3}
+      propertyPath: endPoint
+      value: 
+      objectReference: {fileID: 2142188353712646506, guid: 5ad76dda938a5fa4784964f883430b9d, type: 3}
     - target: {fileID: 3904096826641975309, guid: f48456156eec42b458da9e40a3c9b267, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1319,7 +1277,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: '-----       LEVEL DESIGN       ----- '
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3904096826641975310, guid: f48456156eec42b458da9e40a3c9b267, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f48456156eec42b458da9e40a3c9b267, type: 3}
 --- !u!4 &1539520597 stripped
 Transform:
