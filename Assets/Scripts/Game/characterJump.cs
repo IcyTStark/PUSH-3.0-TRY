@@ -23,26 +23,26 @@ public class characterJump : MonoBehaviour
     }
     private void Update()
     {
-        if (neverDone)
-        {
-            if (parentRef.GetComponent<PathToTravel>().transform.position == parentRef.GetComponent<PathToTravel>().targetPosition)
-            {
-                _IsCharInLastTile = true;
-            }
-        }
+        //if (neverDone)
+        //{
+        //    if (parentRef.GetComponent<PathToTravel>().transform.position == parentRef.GetComponent<PathToTravel>().targetPosition)
+        //    {
+        //        _IsCharInLastTile = true;
+        //    }
+        //}
 
-        if (_IsCharInLastTile && !this.animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
-        {
-            _Jump = true;
-        }
+        //if (_IsCharInLastTile && !this.animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+        //{
+        //    _Jump = true;
+        //}
 
-        if (_Jump == true)
-        {
-            animator.SetBool("shouldJump?", true); //Bool for your animation to play if u have a idle with you.
-        }
-        if (animator.GetBool("shouldJump?") == true && _Jump == true)
-        {
-            transform.Translate(Vector3.forward * Time.deltaTime);
-        }
+        //if (_Jump == true)
+        //{
+        //    animator.SetBool("shouldJump?", true); //Bool for your animation to play if u have a idle with you.
+        //}
+        //if (animator.GetBool("shouldJump?") == true && _Jump == true)
+        //{
+        //    transform.Translate(Vector3.forward * Time.deltaTime);
+        //}
     }
 }

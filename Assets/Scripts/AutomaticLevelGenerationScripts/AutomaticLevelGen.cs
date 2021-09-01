@@ -70,10 +70,10 @@ public class AutomaticLevelGen : MonoBehaviour
                         float c = 0;
                         for (int i = 0; i < surferBoardCount; i++, c += 0.3f)
                         {
-                            Instantiate(surferBoard, new Vector3(x, 3f + c, z), Quaternion.identity);
+                            Instantiate(surferBoard, new Vector3(x, 2.3f + c, z), Quaternion.identity);
                             if (i > surferBoardCount) break;
                         }
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.identity);
+                        Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.identity);
                         break;
                     case "D":
                         surferBoardCount = 4;
@@ -113,23 +113,17 @@ public class AutomaticLevelGen : MonoBehaviour
     //Function to read the file and parse through each texts one by one
     string[][] readFile(string fileName)
     {
-        TextAsset textFile = Resources.Load(fileName) as TextAsset;
-        string text = textFile.text;
+        TextAsset LoadedtextFile = Resources.Load(fileName) as TextAsset;
+        string text = LoadedtextFile.text;
         string[] lines = Regex.Split(text, "\r\n");
-        int rows = lines.Length;
-        //Debug.Log(rows);
-        for (int i = 0; i < lines.Length; i++)
+        int rows = lines.Length - 1;
+        Debug.Log(rows);
+        string[][] levelBase = new string[rows][];
+        for (int i = 0; i < rows; i++)
         {
             string[] stringsOfLine = Regex.Split(lines[i], ",");
-            Debug.Log(stringsOfLine[i].Length);
-            //levelBase[i] = stringsOfLine;
+            levelBase[i] = stringsOfLine;
         }
-        string[][] levelBase = new string[rows][];
-        //for (int i = 0; i < lines.Length; i++)
-        //{
-        //    string[] stringsOfLine = Regex.Split(lines[i], ",");
-        //    levelBase[i] = stringsOfLine;
-        //}
         return levelBase;
     }
 }
