@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 2142188353712646505}
   - component: {fileID: 1810876164628927556}
   m_Layer: 0
-  m_Name: CubeDest
+  m_Name: endingPoint
   m_TagString: Destination
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

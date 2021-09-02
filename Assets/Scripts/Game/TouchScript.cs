@@ -28,7 +28,7 @@ public class TouchScript : MonoBehaviour
                 {
                     if (hitSpot.collider.gameObject.tag == "Surfers") //If its a gameOBject names surfer move it to its targetPosition
                     {
-                        hitSpot.transform.gameObject.GetComponent<FindYourWay>().move = true;
+                        //hitSpot.transform.gameObject.GetComponent<FindYourWay>().move = true;
                         //var storeLenght = hitSpot.transform.gameObject.transform.childCount - 1f;
                         //for (int i = 0; i <= storeLenght; i++)
                         //{

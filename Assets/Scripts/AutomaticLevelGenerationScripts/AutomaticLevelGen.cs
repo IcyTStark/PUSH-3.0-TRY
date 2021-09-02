@@ -42,54 +42,69 @@ public class AutomaticLevelGen : MonoBehaviour
             {
                 switch (LevelLoader[x][z])
                 {
+                    #region 1-Surfer CodeBlock
                     case "AD":
                         surferBoardCount = 1;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 90f, 0))) ;
                         break;
+
                     case "AU":
                         surferBoardCount = 1;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
                         break;
+
                     case "AR":
                         surferBoardCount = 1;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 0f, 0)));
+                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.identity);
                         break;
+
                     case "AL":
                         surferBoardCount = 1;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
                         break;
+
+                    #endregion
+
+                    #region 2-Surfer CodeBlock
                     case "BD":
                         surferBoardCount = 2;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x,z);
                         Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.Euler(new Vector3(0, 90f, 0)));
                         break;
+
                     case "BU":
                         surferBoardCount = 2;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
                         break;
+
                     case "BR":
                         surferBoardCount = 2;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.identity);
                         break;
+
                     case "BL":
                         surferBoardCount = 2;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
                         break;
+
+                    #endregion
+
+                    #region 3-Surfer CodeBlock
                     case "CD":
                         surferBoardCount = 3;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
@@ -114,6 +129,9 @@ public class AutomaticLevelGen : MonoBehaviour
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
                         break;
+                    #endregion
+
+                    #region 4-Surfer CodeBlock
                     case "DD":
                         surferBoardCount = 4;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
@@ -138,6 +156,9 @@ public class AutomaticLevelGen : MonoBehaviour
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
                         break;
+                    #endregion
+
+                    #region 5-Surfer CodeBlock
                     case "ED":
                         surferBoardCount = 5;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
@@ -162,14 +183,21 @@ public class AutomaticLevelGen : MonoBehaviour
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
                         break;
+                    #endregion
+
+                    #region Rails / SurferSlots
                     case "2":
                         Instantiate(rails, new Vector3(x, 1.95f, z), Quaternion.identity);  //Instantiates rails (Surfer Holders / Place for surfers to sit)
                         break;
+                    #endregion
+
+                    #region Destination / EndPoint
                     case "3":
                         GameObject destinationRef = Instantiate(endPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Destination
                         GameObject giftRef = Instantiate(gift, new Vector3(transform.position.x, 15f, transform.position.z), Quaternion.identity); //Instantiates 
                         giftRef.transform.SetParent(destinationRef.transform, true);
                         break;
+                        #endregion
                 }
             }
         }
