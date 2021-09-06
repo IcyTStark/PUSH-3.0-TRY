@@ -348,13 +348,14 @@ GameObject:
   - component: {fileID: 172895859}
   - component: {fileID: 172895860}
   - component: {fileID: 172895861}
+  - component: {fileID: 172895862}
   m_Layer: 0
   m_Name: New Level Generator Try
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &172895859
 Transform:
   m_ObjectHideFlags: 0
@@ -393,17 +394,33 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172895858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a699d5e8d4d09d4094bdf6648e1d54c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 8568437313918424094, guid: 8d9f6c279549ada49996a54868b51d17, type: 3}
-  destination: {fileID: 2142188353712646506, guid: 5ad76dda938a5fa4784964f883430b9d, type: 3}
+  endPoint: {fileID: 0}
   gift: {fileID: 5823500004866244441, guid: 947dfa5bd8614774eaa74e9ab26b14eb, type: 3}
   rails: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
   playerSpawner: {fileID: 7551215918117234164, guid: e35a39ba16ed52848a822b0771a117e1, type: 3}
   surferBoard: {fileID: 970731544045492877, guid: e4eab94303e66f44da312dfa483131a3, type: 3}
+--- !u!114 &172895862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172895858}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f2c9aba84ceb045949ea7008823d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  position: {x: 0, y: 0, z: 0}
+  gb: {fileID: 0}
+  surferPlaced: 0
 --- !u!1 &532853075
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1983549553609998130, guid: 6d2a124d67f80064dbeff7ccee435b64, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1983549553609998133, guid: 6d2a124d67f80064dbeff7ccee435b64, type: 3}
       propertyPath: m_RootOrder

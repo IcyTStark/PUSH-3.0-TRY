@@ -30,8 +30,13 @@ public class AutomaticLevelGen : MonoBehaviour
 
     string LevelName;
 
+    int index;
+
+    List<string[]> rowData;
+
     void Start()
     {
+
         LevelName = SceneManager.GetActiveScene().name.ToString();
         string[][] LevelLoader = readFile(LevelName);
 
@@ -44,6 +49,7 @@ public class AutomaticLevelGen : MonoBehaviour
                 {
                     #region 1-Surfer CodeBlock
                     case "AD":
+                        index++;
                         surferBoardCount = 1;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -51,6 +57,7 @@ public class AutomaticLevelGen : MonoBehaviour
                         break;
 
                     case "AU":
+                        index++;
                         surferBoardCount = 1;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -58,6 +65,7 @@ public class AutomaticLevelGen : MonoBehaviour
                         break;
 
                     case "AR":
+                        index++;
                         surferBoardCount = 1;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -65,6 +73,7 @@ public class AutomaticLevelGen : MonoBehaviour
                         break;
 
                     case "AL":
+                        index++;
                         surferBoardCount = 1;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -75,6 +84,7 @@ public class AutomaticLevelGen : MonoBehaviour
 
                     #region 2-Surfer CodeBlock
                     case "BD":
+                        index++;
                         surferBoardCount = 2;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x,z);
@@ -82,6 +92,7 @@ public class AutomaticLevelGen : MonoBehaviour
                         break;
 
                     case "BU":
+                        index++;
                         surferBoardCount = 2;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -89,6 +100,7 @@ public class AutomaticLevelGen : MonoBehaviour
                         break;
 
                     case "BR":
+                        index++;
                         surferBoardCount = 2;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -96,6 +108,7 @@ public class AutomaticLevelGen : MonoBehaviour
                         break;
 
                     case "BL":
+                        index++;
                         surferBoardCount = 2;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -106,24 +119,28 @@ public class AutomaticLevelGen : MonoBehaviour
 
                     #region 3-Surfer CodeBlock
                     case "CD":
+                        index++;
                         surferBoardCount = 3;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.Euler(new Vector3(0, 90f, 0)));
                         break;
                     case "CU":
+                        index++;
                         surferBoardCount = 3;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
                         break;
                     case "CR":
+                        index++;
                         surferBoardCount = 3;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.identity);
                         break;
                     case "CL":
+                        index++;
                         surferBoardCount = 3;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -133,24 +150,28 @@ public class AutomaticLevelGen : MonoBehaviour
 
                     #region 4-Surfer CodeBlock
                     case "DD":
+                        index++;
                         surferBoardCount = 4;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.Euler(new Vector3(0, 90f, 0)));
                         break;
                     case "DU":
+                        index++;
                         surferBoardCount = 4;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
                         break;
                     case "DR":
+                        index++;
                         surferBoardCount = 4;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.identity);
                         break;
                     case "DL":
+                        index++;
                         surferBoardCount = 4;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -160,24 +181,28 @@ public class AutomaticLevelGen : MonoBehaviour
 
                     #region 5-Surfer CodeBlock
                     case "ED":
+                        index++;
                         surferBoardCount = 5;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 90f, 0)));
                         break;
                     case "EU":
+                        index++;
                         surferBoardCount = 5;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
                         break;
                     case "ER":
+                        index++;
                         surferBoardCount = 5;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
                         Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.identity);
                         break;
                     case "EL":
+                        index++;
                         surferBoardCount = 5;
                         Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
                         StackCubes(x, z);
@@ -187,17 +212,23 @@ public class AutomaticLevelGen : MonoBehaviour
 
                     #region Rails / SurferSlots
                     case "2":
+                        index++;
                         Instantiate(rails, new Vector3(x, 1.95f, z), Quaternion.identity);  //Instantiates rails (Surfer Holders / Place for surfers to sit)
                         break;
                     #endregion
 
                     #region Destination / EndPoint
                     case "3":
+                        index++;
                         GameObject destinationRef = Instantiate(endPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Destination
                         GameObject giftRef = Instantiate(gift, new Vector3(transform.position.x, 15f, transform.position.z), Quaternion.identity); //Instantiates 
                         giftRef.transform.SetParent(destinationRef.transform, true);
                         break;
-                        #endregion
+                    #endregion
+
+                    case "0":
+                        index++;
+                        break;
                 }
             }
         }
@@ -218,8 +249,10 @@ public class AutomaticLevelGen : MonoBehaviour
     {
         TextAsset LoadedtextFile = Resources.Load(fileName) as TextAsset;
         string text = LoadedtextFile.text;
-        string[] lines = Regex.Split(text, "\r\n");
-        int rows = lines.Length - 1;
+        string[] lines = Regex.Split(text, "\r\n"); //We get our rows data here (lines here are our rows)
+        int rows = lines.Length - 1;                //We get the row length
+        int column = lines[0].Length;               //As we already have our row data we are trying to access
+        Debug.Log(lines[0].Length);
         string[][] levelBase = new string[rows][];
         for (int i = 0; i < rows; i++)
         {

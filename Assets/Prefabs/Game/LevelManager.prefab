@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290652652400726555}
   - component: {fileID: 290652652400726554}
+  - component: {fileID: 3539890359971627229}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -43,15 +44,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e72dba28b2c84140a8d65ef9e567a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPoints: []
+  destinations: []
+  tp: []
   coinText: {fileID: 0}
-  coin: 0
-  currentCoinValue: 0
-  nextLevelUI: {fileID: 0}
   waitTimeBetweenLevels: 4
-  charactersInScene: []
-  animator: []
   giftsInScene: []
   giftAnimator: []
-  LevelLoaderRef: {fileID: 0}
-  isDone: 0
+--- !u!114 &3539890359971627229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290652652400726557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f2c9aba84ceb045949ea7008823d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  position: {x: 0, y: 0, z: 0}
+  gb: {fileID: 0}
+  surferPlaced: 0

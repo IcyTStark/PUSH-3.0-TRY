@@ -724,6 +724,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rails (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7890366087867219351, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1264,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Surfer
       objectReference: {fileID: 0}
+    - target: {fileID: 970731544045492877, guid: e4eab94303e66f44da312dfa483131a3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2037128698664238626, guid: e4eab94303e66f44da312dfa483131a3, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1448,6 +1456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rails (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7890366087867219351, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1521,6 +1533,10 @@ PrefabInstance:
     - target: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
       propertyPath: m_Name
       value: Rails
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7890366087867219351, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
       propertyPath: m_RootOrder
@@ -1715,6 +1731,10 @@ PrefabInstance:
     - target: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
       propertyPath: m_Name
       value: Rails (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407267494629304109, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7890366087867219351, guid: 57ef70e4588eae74e90db03e807f2e20, type: 3}
       propertyPath: m_RootOrder
