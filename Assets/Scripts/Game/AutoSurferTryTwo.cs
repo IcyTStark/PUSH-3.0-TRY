@@ -6,7 +6,7 @@ using UnityEngine;
 public class AutoSurferTryTwo : MonoBehaviour
 {
     public GameObject[] TargetPointsInScene;
-    public List<TargetPoint> TargetPointScriptOfTargetPoints;
+    public List<SurferSlots> TargetPointScriptOfTargetPoints;
     Vector3 targetPosition;
 
     public float speed;
@@ -21,7 +21,7 @@ public class AutoSurferTryTwo : MonoBehaviour
 
        foreach(GameObject tp in TargetPointsInScene)
        {
-            TargetPoint storeTargetPointScript = tp.GetComponent<TargetPoint>();
+            SurferSlots storeTargetPointScript = tp.GetComponent<SurferSlots>();
             TargetPointScriptOfTargetPoints.Add(storeTargetPointScript);
        }
 

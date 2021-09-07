@@ -30,13 +30,9 @@ public class AutomaticLevelGen : MonoBehaviour
 
     string LevelName;
 
-    int index;
-
-    List<string[]> rowData;
-
+    public int index;
     void Start()
     {
-
         LevelName = SceneManager.GetActiveScene().name.ToString();
         string[][] LevelLoader = readFile(LevelName);
 
@@ -49,171 +45,86 @@ public class AutomaticLevelGen : MonoBehaviour
                 {
                     #region 1-Surfer CodeBlock
                     case "AD":
-                        index++;
-                        surferBoardCount = 1;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 90f, 0))) ;
-                        break;
-
-                    case "AU":
-                        index++;
-                        surferBoardCount = 1;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
-                        break;
-
-                    case "AR":
-                        index++;
-                        surferBoardCount = 1;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.identity);
-                        break;
-
-                    case "AL":
-                        index++;
-                        surferBoardCount = 1;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
+                        SpawnSurferAndPlayer(x, z, 1, 2.4f, 90f);
+                        break;                        
+                    case "AU":                        
+                        SpawnSurferAndPlayer(x, z, 1, 2.4f, 270f);
+                        break;                        
+                    case "AR":                        
+                        SpawnSurferAndPlayer(x, z, 1, 2.4f, 0f);
+                        break;                        
+                    case "AL":                        
+                        SpawnSurferAndPlayer(x, z, 1, 2.4f, 180f);
                         break;
 
                     #endregion
 
                     #region 2-Surfer CodeBlock
                     case "BD":
-                        index++;
-                        surferBoardCount = 2;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x,z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.Euler(new Vector3(0, 90f, 0)));
+                        SpawnSurferAndPlayer(x, z, 2, 2.7f, 90f);
+                        break;                        
+                    case "BU":                        
+                        SpawnSurferAndPlayer(x, z, 2, 2.7f, 270f);
+                        break;                        
+                    case "BR":                        
+                        SpawnSurferAndPlayer(x, z, 2, 2.7f, 0f);
+                        break;                        
+                    case "BL":                        
+                        SpawnSurferAndPlayer(x, z, 2, 2.7f, 180f);
                         break;
-
-                    case "BU":
-                        index++;
-                        surferBoardCount = 2;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
-                        break;
-
-                    case "BR":
-                        index++;
-                        surferBoardCount = 2;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.identity);
-                        break;
-
-                    case "BL":
-                        index++;
-                        surferBoardCount = 2;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.7f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
-                        break;
-
                     #endregion
 
                     #region 3-Surfer CodeBlock
                     case "CD":
-                        index++;
-                        surferBoardCount = 3;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.Euler(new Vector3(0, 90f, 0)));
-                        break;
-                    case "CU":
-                        index++;
-                        surferBoardCount = 3;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
-                        break;
-                    case "CR":
-                        index++;
-                        surferBoardCount = 3;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.identity);
-                        break;
-                    case "CL":
-                        index++;
-                        surferBoardCount = 3;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 3f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
+                        SpawnSurferAndPlayer(x, z, 3, 3.0f, 90f);
+                        break;                        
+                    case "CU":                        
+                        SpawnSurferAndPlayer(x, z, 3, 3.0f, 270f);
+                        break;                        
+                    case "CR":                        
+                        SpawnSurferAndPlayer(x, z, 3, 3.0f, 0f);
+                        break;                        
+                    case "CL":                        
+                        SpawnSurferAndPlayer(x, z, 3, 3.0f, 180f);
                         break;
                     #endregion
 
                     #region 4-Surfer CodeBlock
                     case "DD":
-                        index++;
-                        surferBoardCount = 4;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.Euler(new Vector3(0, 90f, 0)));
-                        break;
-                    case "DU":
-                        index++;
-                        surferBoardCount = 4;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
-                        break;
-                    case "DR":
-                        index++;
-                        surferBoardCount = 4;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.identity);
-                        break;
-                    case "DL":
-                        index++;
-                        surferBoardCount = 4;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 3.4f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
+                        SpawnSurferAndPlayer(x, z, 4, 3.3f, 90f);
+                        break;                        
+                    case "DU":                        
+                        SpawnSurferAndPlayer(x, z, 4, 3.3f, 270f);
+                        break;                        
+                    case "DR":                        
+                        SpawnSurferAndPlayer(x, z, 4, 3.3f, 0f);
+                        break;                        
+                    case "DL":                        
+                        SpawnSurferAndPlayer(x, z, 4, 3.3f, 180f);
                         break;
                     #endregion
 
                     #region 5-Surfer CodeBlock
                     case "ED":
-                        index++;
-                        surferBoardCount = 5;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 90f, 0)));
+                        SpawnSurferAndPlayer(x, z, 5, 3.6f, 90f);
                         break;
                     case "EU":
-                        index++;
-                        surferBoardCount = 5;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 270f, 0)));
+                        SpawnSurferAndPlayer(x, z, 5, 3.6f, 270f);
                         break;
                     case "ER":
-                        index++;
-                        surferBoardCount = 5;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.identity);
+                        SpawnSurferAndPlayer(x, z, 5, 3.6f, 0f);
                         break;
                     case "EL":
-                        index++;
-                        surferBoardCount = 5;
-                        Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
-                        StackCubes(x, z);
-                        Instantiate(playerSpawner, new Vector3(x, 2.4f, z), Quaternion.Euler(new Vector3(0, 180f, 0)));
+                        SpawnSurferAndPlayer(x, z, 5, 3.6f, 180f);
                         break;
                     #endregion
 
                     #region Rails / SurferSlots
                     case "2":
                         index++;
-                        Instantiate(rails, new Vector3(x, 1.95f, z), Quaternion.identity);  //Instantiates rails (Surfer Holders / Place for surfers to sit)
+                        GameObject Rail = Instantiate(rails, new Vector3(x, 1.95f, z), Quaternion.identity);  //Instantiates rails (Surfer Holders / Place for surfers to sit)
+                        Rail.GetComponent<SurferSlots>().slotIndex = index; 
+                        Rail.GetComponent<SurferSlots>().slotPosition = new Vector3(x, 0, z);
                         break;
                     #endregion
 
@@ -223,6 +134,8 @@ public class AutomaticLevelGen : MonoBehaviour
                         GameObject destinationRef = Instantiate(endPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Destination
                         GameObject giftRef = Instantiate(gift, new Vector3(transform.position.x, 15f, transform.position.z), Quaternion.identity); //Instantiates 
                         giftRef.transform.SetParent(destinationRef.transform, true);
+                        destinationRef.GetComponent<EndingPoint>().endingPointIndex = index;
+                        destinationRef.GetComponent<EndingPoint>().endingPointPosition = new Vector3(x, 0, z);
                         break;
                     #endregion
 
@@ -234,14 +147,23 @@ public class AutomaticLevelGen : MonoBehaviour
         }
     }
 
-    private void StackCubes(int x, int z)
+    //Spawn Surfer (int xlocation, int zlocation, surfersCountStacked, PlayerPositionInY, playerRotationWhileSpawning)
+    private void SpawnSurferAndPlayer(int x, int z,int surferCount,float playerSpawnYPosition,float playersRotationAngle)
     {
+        index++;
+        surferBoardCount = surferCount;
+        GameObject startPoint = Instantiate(spawnPoint, new Vector3(x, -13f, z), Quaternion.identity); //Instantiates Starting Point
+        startPoint.GetComponent<StartingPoint>().startingPointIndex = index;
+        startPoint.GetComponent<StartingPoint>().startingPointPosition = new Vector3(x, 0, z);
         float a = 0;
         for (int i = 0; i < surferBoardCount; i++, a += 0.3f)
         {
-            Instantiate(surferBoard, new Vector3(x, 2.3f + a, z), Quaternion.identity);
+            GameObject surfer = Instantiate(surferBoard, new Vector3(x, 2.3f + a, z), Quaternion.identity);
+            surfer.GetComponent<Surfer>().surferIndex = index;
+            surfer.GetComponent<Surfer>().SurferPosition = new Vector3(x, 0, z);
             if (i > surferBoardCount) break;
         }
+        Instantiate(playerSpawner, new Vector3(x, playerSpawnYPosition, z), Quaternion.Euler(new Vector3(0,playersRotationAngle, 0)));
     }
 
     //Function to read the file and parse through each texts one by one
@@ -250,9 +172,9 @@ public class AutomaticLevelGen : MonoBehaviour
         TextAsset LoadedtextFile = Resources.Load(fileName) as TextAsset;
         string text = LoadedtextFile.text;
         string[] lines = Regex.Split(text, "\r\n"); //We get our rows data here (lines here are our rows)
+        string[] rowItemsCount = Regex.Split(lines[0], ","); //With one of the rows data we take its lenght and define the column size
         int rows = lines.Length - 1;                //We get the row length
-        int column = lines[0].Length;               //As we already have our row data we are trying to access
-        Debug.Log(lines[0].Length);
+        int column = rowItemsCount.Length;               //As we already have our row data we are trying to access the components and fix column length here. Now we have our column lenght too
         string[][] levelBase = new string[rows][];
         for (int i = 0; i < rows; i++)
         {

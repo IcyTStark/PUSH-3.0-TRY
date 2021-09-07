@@ -9,7 +9,7 @@ public class PathToTravel : MonoBehaviour
 {
     //Config Params
     [Header("Surfers WayPoints & Speed")]
-    [SerializeField] public List<TargetPoint> waypoints;
+    [SerializeField] public List<SurferSlots> waypoints;
     [SerializeField] float moveSpeed = 2f;
     int waypointIndex = 0;
     [HideInInspector] public Vector3 targetPosition;

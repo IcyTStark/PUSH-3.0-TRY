@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
     [Space]
     public GameObject[] destinations;   //Gets the destination count for each level locally
     GameObject[] targetPoints;
-    public List<TargetPoint> tp;
+    public List<SurferSlots> tp;
 
     [Space]
     [Header("Coin Display & Count")]
@@ -48,7 +48,7 @@ public class LevelManager : MonoBehaviour
 
             foreach (GameObject target in targetPoints)
             {
-                var storeTargetPoints = target.GetComponent<TargetPoint>();
+                var storeTargetPoints = target.GetComponent<SurferSlots>();
                 tp.Add(storeTargetPoints);
             }
 

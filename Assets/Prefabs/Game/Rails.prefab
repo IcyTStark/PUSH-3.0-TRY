@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7890366087867219351}
   - component: {fileID: 6498674143076168242}
   - component: {fileID: 9064368337315874552}
-  - component: {fileID: 6865830294378482767}
+  - component: {fileID: 580792567653746912}
   m_Layer: 6
   m_Name: Rails
   m_TagString: TargetPoint
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6865830294378482767
+--- !u!114 &580792567653746912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,7 +91,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7407267494629304109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c47361e3041d0e14c886f229b08e1e59, type: 3}
+  m_Script: {fileID: 11500000, guid: 32c8a68bdcb61cd4a9963f24eca464d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotIndex: 0
+  slotPosition: {x: 0, y: 0, z: 0}
   isFilled: 0

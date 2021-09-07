@@ -14,9 +14,9 @@ public class AutoSurferTry3 : MonoBehaviour
             //Debug.Log(this.gameObject.transform.GetChild(i).name);
         }
     }
-    bool FindClosestTargetPoints(out TargetPoint targetPoint)
+    bool FindClosestTargetPoints(out SurferSlots targetPoint)
     {
-        targetPoint = FindObjectsOfType<TargetPoint>().Where(t => !t.isFilled).OrderBy(t => (t.transform.position - transform.position).sqrMagnitude).FirstOrDefault();
+        targetPoint = FindObjectsOfType<SurferSlots>().Where(t => !t.isFilled).OrderBy(t => (t.transform.position - transform.position).sqrMagnitude).FirstOrDefault();
         return targetPoint;
     }
 

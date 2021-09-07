@@ -5,9 +5,9 @@ using System.Linq;
 
 public class AutoSurfer : MonoBehaviour
 {
-   private bool FindClosestTargetPoints(out TargetPoint targetPoint)
+   private bool FindClosestTargetPoints(out SurferSlots targetPoint)
    {
-       targetPoint = FindObjectsOfType<TargetPoint>().Where(t => !t.isFilled).OrderBy(t => (t.transform.position - transform.position).sqrMagnitude).FirstOrDefault();
+       targetPoint = FindObjectsOfType<SurferSlots>().Where(t => !t.isFilled).OrderBy(t => (t.transform.position - transform.position).sqrMagnitude).FirstOrDefault();
        Debug.Log(targetPoint);
        return targetPoint;
    }
